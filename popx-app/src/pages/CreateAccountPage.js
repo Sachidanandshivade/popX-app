@@ -25,7 +25,7 @@ function CreateAccountPage() {
   const handleChange = (e, key) => {
     let value = e.target.value;
 
-    // Only numbers for phone
+    
     if (key === 'phone') {
       value = value.replace(/\D/g, '');
     }
@@ -82,7 +82,7 @@ function CreateAccountPage() {
       background: '#eee'
     }}>
 
-      {/* 📱 Mobile Frame */}
+     
       <div style={{
         width: '360px',
         height: '640px',
@@ -105,7 +105,7 @@ function CreateAccountPage() {
           Create your<br />PopX account
         </h1>
 
-        {/* Form */}
+        
         <div style={{ overflowY: 'auto' }}>
           {fields.map((f, i) => (
             <div key={i} style={{ marginBottom: '16px' }}>
@@ -141,7 +141,7 @@ function CreateAccountPage() {
                 />
               </div>
 
-              {/* Error Message */}
+             
               {errors[f.key] && (
                 <p style={{
                   color: 'red',
@@ -154,7 +154,7 @@ function CreateAccountPage() {
             </div>
           ))}
 
-          {/* Agency */}
+        
           <div style={{ margin: '12px 0 32px' }}>
             <p style={{ fontSize: '14px', marginBottom: '8px' }}>
               Are you an Agency?*
@@ -182,7 +182,7 @@ function CreateAccountPage() {
           </div>
         </div>
 
-        {/* Button */}
+       
         <button
           onClick={handleCreate}
           style={{

@@ -29,7 +29,7 @@ function LoginPage() {
       background: '#eee'
     }}>
 
-      {/* 📱 Mobile Frame */}
+    
       <div style={{
         width: '360px',
         height: '640px',
@@ -56,10 +56,10 @@ function LoginPage() {
           Enter your credentials to continue
         </p>
 
-        {/* Form */}
+      
         <div style={{ flex: 1 }}>
 
-          {/* Email */}
+       
           <div style={{
             marginBottom: '20px',
             position: 'relative',
@@ -92,7 +92,7 @@ function LoginPage() {
             />
           </div>
 
-          {/* Password */}
+         
           <div style={{
             marginBottom: '28px',
             position: 'relative',
@@ -128,7 +128,7 @@ function LoginPage() {
 
         </div>
 
-        {/* Login Button */}
+      
         <button
           onClick={handleLogin}
           style={{

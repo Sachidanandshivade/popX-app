@@ -5,7 +5,7 @@ function AccountSettingsPage() {
 
   const user = JSON.parse(localStorage.getItem('user'));
 
-  // 🔒 Protect route (optional but important)
+ 
   if (!user) {
     navigate('/login');
     return null;
@@ -17,7 +17,7 @@ function AccountSettingsPage() {
       background: '#f7f7f7'
     }}>
 
-      {/* Header */}
+      
       <div style={{
         padding: '20px 24px',
         background: '#fff',
@@ -28,21 +28,21 @@ function AccountSettingsPage() {
         </h2>
       </div>
 
-      {/* Profile Section */}
+  
       <div style={{
         padding: '24px',
         background: '#fff',
         borderBottom: '1px dashed #ccc'
       }}>
 
-        {/* Profile + Basic Info */}
+       
         <div style={{
           display: 'flex',
           alignItems: 'center',
           marginBottom: '20px'
         }}>
 
-          {/* Profile Image */}
+          
           <div style={{ position: 'relative', marginRight: '16px' }}>
             <img
               src="https://randomuser.me/api/portraits/men/44.jpg"
@@ -71,7 +71,7 @@ function AccountSettingsPage() {
             </div>
           </div>
 
-          {/* Name + Email */}
+        
           <div>
             <p style={{ fontWeight: 'bold', margin: 0 }}>
               {user.fullName}
@@ -82,7 +82,7 @@ function AccountSettingsPage() {
           </div>
         </div>
 
-        {/* Extra Info */}
+        
         <div style={{ fontSize: '14px', lineHeight: '1.8' }}>
           <p><strong>Phone:</strong> {user.phone}</p>
           <p><strong>Company:</strong> {user.company || 'N/A'}</p>
@@ -91,7 +91,7 @@ function AccountSettingsPage() {
 
       </div>
 
-      {/* Logout Button */}
+ 
       <div style={{ padding: '24px' }}>
         <button
           onClick={() => {

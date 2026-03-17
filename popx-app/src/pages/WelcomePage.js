@@ -8,15 +8,15 @@ function WelcomePage() {
   justifyContent: 'center',
   alignItems: 'center',
   height: '100vh',
-  background: '#eee' // optional outer background
+  background: '#eee' 
 }}>
   
   <div style={{
-    width: '360px',              // 👈 mobile width
-    height: '640px',             // 👈 mobile height
-    border: '2px solid #ccc',    // 👈 border added
-    borderRadius: '16px',        // 👈 rounded corners
-    boxShadow: '0 4px 20px rgba(0,0,0,0.1)', // 👈 nice shadow
+    width: '360px',              
+    height: '640px',            
+    border: '2px solid #ccc',    
+    borderRadius: '16px',       
+    boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
     overflow: 'hidden',
     display: 'flex',
     flexDirection: 'column',
